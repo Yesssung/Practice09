@@ -27,11 +27,11 @@ public class GoodsApp {
         	}
         	// 상품명, 가격, 개수 기준을 콤마(,)를 기준으로 분할해서 객체생성
         	String[] data = line.split(",");
-        	String name = data[0].trim();
+        	String name = data[0].trim(); // trim 여백 삭제
         	int price = Integer.parseInt(data[1].trim());
         	int count = Integer.parseInt(data[2].trim());
         	
-        	// goods 객체 생성
+        	// goods 객체(인스턴스) 생성
         	Goods goods = new Goods(name, price, count);
         	
         	// list에 추가하기

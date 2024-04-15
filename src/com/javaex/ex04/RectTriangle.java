@@ -14,6 +14,7 @@ public class RectTriangle extends Shape {
     	this.height = height;
     }
     
+    // getter, setter
 	public double getWidth() {
 		return width;
 	}

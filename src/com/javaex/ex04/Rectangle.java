@@ -10,6 +10,7 @@ public class Rectangle extends Shape implements Resizeable {
     	this.height = height;
     }
     
+    // getter, setter
 	public void setWidth(double width) {
 		this.width = width;
 	}
@@ -17,6 +18,7 @@ public class Rectangle extends Shape implements Resizeable {
 		this.height = height;
 	}
 
+	// 인터페이스랑 추상클래스 상속
 	@Override
 	public void resize(double s) {
 		width  = width * s;
