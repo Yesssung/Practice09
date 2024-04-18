@@ -1,10 +1,10 @@
 package com.javaex.ex04;
 
 public class Rectangle extends Shape implements Resizeable {
-	
+	// 필드
     private double width;
     private double height;
-    
+    // 생성자
     public Rectangle(double width, double height) {
     	this.width = width;
     	this.height = height;
@@ -19,6 +19,7 @@ public class Rectangle extends Shape implements Resizeable {
 	}
 
 	// 인터페이스랑 추상클래스 상속
+	// 인터페이스에서 상속된 메서드 구현
 	@Override
 	public void resize(double s) {
 		width  = width * s;
@@ -43,6 +44,7 @@ public class Rectangle extends Shape implements Resizeable {
 		return 0;
 	}
 
+	// 추상클래스에서의 추상메서드를 반드시 구현해야 한다.
 	@Override
 	public double getArea() {
 		return width * height;

@@ -23,7 +23,7 @@ public class RectTriangle extends Shape {
 		return height;
 	}
 
-	// 추상클래스(부모) 구현 메소드
+	// 추상클래스에서 상속받은 추상메서드 구현 해야한다.
 	@Override
 	public double getArea() { // 직각 삼각형 넓이
 		return width * height * 0.5;
