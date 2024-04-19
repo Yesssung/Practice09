@@ -1,6 +1,7 @@
 package com.javaex.ex04;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 public class ShapeApp {
@@ -12,7 +13,7 @@ public class ShapeApp {
         Shape t= new RectTriangle( 6, 2 );
         sList.add(r);
         sList.add(t);
-        
+       
         
         for( int i=0; i<sList.size(); i++ ) { // slist의 size(개수)만큼
             
